@@ -1,6 +1,8 @@
 ## README
 React + Typescript + styled-component で実装したNeumorphismボタン
 
+### 環境設定
+
 ### デモ
 https://rruryu.github.io/typescript-styled-component-neumorphism/
 
