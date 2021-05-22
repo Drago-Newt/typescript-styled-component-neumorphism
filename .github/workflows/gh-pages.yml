@@ -21,11 +21,11 @@ jobs:
     # 各ステップの実行
     steps:
       # チェックアウト
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       # 使用するnodeのバージョンを指定
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -39,7 +39,8 @@ jobs:
 
       # gh-pagesを使って公開
       - name: deploy
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_DIR: ./build
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
