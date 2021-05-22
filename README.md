@@ -1,5 +1,5 @@
 ## README
-React + Typescript + styled-component で実装したNeumorphismボタン
+React + Typescript + styled-componentで実装したNeumorphismボタン
 
 ### 環境設定
 - "@types/styled-components": "^5.1.9",
