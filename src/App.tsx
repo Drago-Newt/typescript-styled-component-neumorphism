@@ -21,7 +21,7 @@ const NeumorphismButton = styled(ButtonBase)`
   margin: 0.8em;
   padding: 10px;
   background: #ebecf0;
-  border-radius: ${(props) => props.size};
+  border-radius: ${(props) => props.size ? props.size : "2em"};
   box-shadow: 20px 20px 60px #c1c1c1, -20px -20px 60px #efecec;
   &:hover {
     box-shadow: inset 3px 3px 5px #bbbbbb, inset -3px -3px 5px #ffffff;
@@ -32,7 +32,7 @@ const App = () => {
   return (
     <React.Fragment>
       <NeumorphismButton size={"1.5em"}>💛</NeumorphismButton>
-      <NeumorphismButton size={"2em"}>🧡</NeumorphismButton>
+      <NeumorphismButton size={""}>🧡</NeumorphismButton>
       <NeumorphismButton size={"1.5em"}>💚</NeumorphismButton>
     </React.Fragment>
   );
