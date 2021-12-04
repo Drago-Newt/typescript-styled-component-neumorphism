@@ -7,7 +7,7 @@ React + Typescript + styled-componentで実装したNeumorphismボタン
 - "typescript": "^4.1.2"
 
 ### デモ
-https://eda821.github.io/typescript-styled-component-neumorphism/
+https://went-bye.github.io/typescript-styled-component-neumorphism/
 
 ### 解説記事
 https://awesome-leavitt-53aaf7.netlify.app/posts/styled-component/
